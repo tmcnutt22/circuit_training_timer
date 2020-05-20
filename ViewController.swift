@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        startButton.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+        startButton.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 50/255, alpha: 1)
         startButton.layer.cornerRadius = startButton.frame.height * 0.50
-        pauseButton.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+        pauseButton.backgroundColor = UIColor.init(red: 244/255, green: 232/255, blue: 0/255, alpha: 1)
         pauseButton.layer.cornerRadius = pauseButton.frame.height * 0.50
     }
 
@@ -47,16 +47,16 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    //display time left
     @IBOutlet weak var countdownTimerLabel: UILabel!
-    func pauseTimer (totalTime: Int) -> Int {
-        print (totalTime)
-        return totalTime
-    }
+//    func pauseTimer (totalTime: Int) -> Int {
+//        print (totalTime)
+//        return totalTime
+//    }
     
 //    //actions on button clicks
 //    @IBAction func countdownPause(_ sender: UIButton) {
-    
+//
 //    }
 
     @IBAction func startCountdownTimer(_ sender: UIButton) {
